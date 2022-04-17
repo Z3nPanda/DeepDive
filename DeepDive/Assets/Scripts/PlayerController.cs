@@ -12,7 +12,6 @@ public class PlayerController : MonoBehaviour
     private float rollInput;
     public float rollSpeed = 90f, rollAcceleration = 3.5f;
 
-    // Start is called before the first frame update
     void Start()
     {
         screenCenter.x = Screen.width * 0.5f;
@@ -21,7 +20,6 @@ public class PlayerController : MonoBehaviour
         Cursor.lockState = CursorLockMode.Confined;
     }
 
-    // Update is called once per frame
     void Update()
     {
         lookInput.x = Input.mousePosition.x;
