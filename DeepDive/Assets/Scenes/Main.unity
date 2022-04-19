@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.4492551, g: 0.49932367, b: 0.57571125, a: 1}
+  m_IndirectSpecularColor: {r: 0.44925475, g: 0.49932277, b: 0.5757103, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -315,19 +315,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 498341238843012117, guid: a894a696c7f4211479e1eff232407001, type: 3}
       propertyPath: xMod
-      value: 0.1
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 498341238843012117, guid: a894a696c7f4211479e1eff232407001, type: 3}
       propertyPath: zMod
-      value: 0.3
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 498341238843012117, guid: a894a696c7f4211479e1eff232407001, type: 3}
       propertyPath: xSize
-      value: 100
+      value: 250
       objectReference: {fileID: 0}
     - target: {fileID: 498341238843012117, guid: a894a696c7f4211479e1eff232407001, type: 3}
       propertyPath: zSize
-      value: 100
+      value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 498341238843012117, guid: a894a696c7f4211479e1eff232407001, type: 3}
+      propertyPath: externalMod
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 498341238843012121, guid: a894a696c7f4211479e1eff232407001, type: 3}
       propertyPath: m_Name
@@ -436,7 +440,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6084903867199841449, guid: 888a3fd7c2544124c909082d78780a36, type: 3}
       propertyPath: rollSpeed
-      value: 45
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6084903867199841449, guid: 888a3fd7c2544124c909082d78780a36, type: 3}
       propertyPath: hoverSpeed
@@ -444,15 +448,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6084903867199841449, guid: 888a3fd7c2544124c909082d78780a36, type: 3}
       propertyPath: strafeSpeed
-      value: 3.5
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 6084903867199841449, guid: 888a3fd7c2544124c909082d78780a36, type: 3}
       propertyPath: forwardSpeed
-      value: 10
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 6084903867199841449, guid: 888a3fd7c2544124c909082d78780a36, type: 3}
       propertyPath: lookRateSpeed
-      value: 45
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6084903867199841449, guid: 888a3fd7c2544124c909082d78780a36, type: 3}
+      propertyPath: rollAcceleration
+      value: 2.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 888a3fd7c2544124c909082d78780a36, type: 3}
