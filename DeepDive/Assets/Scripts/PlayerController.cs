@@ -55,5 +55,6 @@ public class PlayerController : MonoBehaviour
         transform.position += transform.forward * activeFowardSpeed * Time.deltaTime;
         transform.position += transform.right * activestrafeSpeed * Time.deltaTime;
         transform.position += transform.up * activeHoverSpeed * Time.deltaTime;
+        
     }
 }
