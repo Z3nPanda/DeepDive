@@ -775,6 +775,10 @@ PrefabInstance:
       value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 6084903867199841449, guid: 888a3fd7c2544124c909082d78780a36, type: 3}
+      propertyPath: playerCamera
+      value: 
+      objectReference: {fileID: 963194228}
+    - target: {fileID: 6084903867199841449, guid: 888a3fd7c2544124c909082d78780a36, type: 3}
       propertyPath: lookRateSpeed
       value: 20
       objectReference: {fileID: 0}
