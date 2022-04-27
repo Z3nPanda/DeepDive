@@ -5,8 +5,8 @@ using UnityEngine;
 public class BasicFishMovement : MonoBehaviour
 {
     
-    [SerializeField] private float movementSpeed = 2f;
-    [SerializeField] private float rotationSpeed = 100f;
+    [SerializeField] private float movementSpeed = .5f;
+    [SerializeField] private float rotationSpeed = 45f;
 
     private bool isWandering = false;
     private bool isRotatingLeft = false;
@@ -33,7 +33,8 @@ public class BasicFishMovement : MonoBehaviour
         Ray ray = new Ray(transform.position, transform.forward);
         RaycastHit hit;
         obstruction = Physics.Raycast(ray, out hit, 5, Terrain);
-        Debug.DrawRay(ray.origin, ray.direction * 5.0f, Color.red);
+        // Uncomment out the debug tool to draw the actual raycasts
+        // Debug.DrawRay(ray.origin, ray.direction * 5.0f, Color.red);
 
         // Enables our fish to wander
         if (isWandering == false)
@@ -61,11 +62,13 @@ public class BasicFishMovement : MonoBehaviour
                 int dir = Random.Range(1, 2);
                 if (dir == 1)
                 {
-                    transform.Rotate(transform.up * Time.deltaTime * 160f);
+                    rb.velocity = new Vector3(0f, 0f, 0f);
+                    transform.Rotate(transform.up * Time.deltaTime * 200f);
                 }
                 else
                 {
-                    transform.Rotate(transform.up * Time.deltaTime * -160f);
+                    rb.velocity = new Vector3(0f, 0f, 0f);
+                    transform.Rotate(transform.up * Time.deltaTime * -200f);
                 }
             }
             else
