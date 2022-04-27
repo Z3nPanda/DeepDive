@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5613670336755245064}
   - component: {fileID: 5613670336755245063}
   - component: {fileID: 5613670336755245062}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: CoralZoneWallX
   m_TagString: Untagged
   m_Icon: {fileID: 0}

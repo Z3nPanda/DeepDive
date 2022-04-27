@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 498341238843012120}
   - component: {fileID: 498341238843012116}
   - component: {fileID: 498341238843012117}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: OceanFloor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
