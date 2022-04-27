@@ -34,7 +34,7 @@ public class BasicFishMovement : MonoBehaviour
         RaycastHit hit;
         obstruction = Physics.Raycast(ray, out hit, 5, Terrain);
         // Uncomment out the debug tool to draw the actual raycasts
-        // Debug.DrawRay(ray.origin, ray.direction * 5.0f, Color.red);
+        Debug.DrawRay(ray.origin, ray.direction * 5.0f, Color.red);
 
         // Enables our fish to wander
         if (isWandering == false)
