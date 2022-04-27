@@ -45,11 +45,13 @@ public class BasicFishMovement : MonoBehaviour
         // Rotate fish either right or left if true
         if (isRotatingRight == true)
         {
+            rb.velocity = new Vector3(0f, 0f, 0f);
             transform.Rotate(transform.up * Time.deltaTime * rotationSpeed);
         }
 
         if (isRotatingLeft == true)
         {
+            rb.velocity = new Vector3(0f, 0f, 0f);
             transform.Rotate(transform.up * Time.deltaTime * -rotationSpeed);
         }
 
@@ -115,7 +117,7 @@ public class BasicFishMovement : MonoBehaviour
         int rotateWait = Random.Range(1, 3);
         int rotateDirection = Random.Range(1, 2);
         int swimWait = Random.Range(1, 3);
-        float swimTime = Random.Range(.25f, .75f);
+        float swimTime = Random.Range(1f, 3f);
 
         int swimUp = Random.Range(1, 5);
         int swimDown = Random.Range(1, 5);
