@@ -65,12 +65,12 @@ public class BasicFishMovement : MonoBehaviour
                 if (dir == 1)
                 {
                     rb.velocity = new Vector3(0f, 0f, 0f);
-                    transform.Rotate(transform.up * Time.deltaTime * 200f);
+                    transform.Rotate(transform.up * Time.deltaTime * 260f);
                 }
                 else
                 {
                     rb.velocity = new Vector3(0f, 0f, 0f);
-                    transform.Rotate(transform.up * Time.deltaTime * -200f);
+                    transform.Rotate(transform.up * Time.deltaTime * -260f);
                 }
             }
             else
