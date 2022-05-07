@@ -23,11 +23,19 @@ public class PlayerController : MonoBehaviour
 
         // lock the mouse inside the game screen
         Cursor.lockState = CursorLockMode.Confined;
+        HealthBarOperator.SetHealthBarVal(1);
+        OxygenBarOperator.SetOxygenBarVal(1);
     }
 
     // Update is called once per frame
     void Update()
     {
+        // player is constantly losing oxygen
+        OxygenBarOperator.SetOxygenBarVal(OxygenBarOperator.GetOxygenBarVal() - 0.00005f);
+        
+        // how to subrtract from player health
+        // HealthBarOperator.SetHealthBarVal(HealthBarOperator.GetHealthBarVal() - 0.00005f);
+
         // set lookInput based on mouse position
         lookInput.x = Input.mousePosition.x;
         lookInput.y = Input.mousePosition.y;
