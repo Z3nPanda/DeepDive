@@ -11,19 +11,22 @@ public class OxygenBarOperator : MonoBehaviour
     // parameter val has range [0, 1]
     public static void SetOxygenBarVal(float val)
     {
-        OxygenBarImage.fillAmount = val;
-        if (OxygenBarImage.fillAmount < 0.25f)
-        {
-            SetOxygenBarColor(Color.red);
+        try {
+            OxygenBarImage.fillAmount = val;
+            if (OxygenBarImage.fillAmount < 0.25f)
+            {
+                SetOxygenBarColor(Color.red);
+            }
+            else if (OxygenBarImage.fillAmount < 0.5f)
+            {
+                SetOxygenBarColor(Color.yellow);
+            }
+            else
+            {
+                SetOxygenBarColor(Color.white);
+            }
         }
-        else if (OxygenBarImage.fillAmount < 0.5f)
-        {
-            SetOxygenBarColor(Color.yellow);
-        }
-        else
-        {
-            SetOxygenBarColor(Color.white);
-        }
+        catch {}
     }
 
     public static float GetOxygenBarVal()

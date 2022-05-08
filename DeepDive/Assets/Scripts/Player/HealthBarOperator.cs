@@ -7,23 +7,33 @@ public class HealthBarOperator : MonoBehaviour
 {
     private static Image HealthBarImage;
 
+    // Start is called before the first frame update
+    void Start()
+    {
+        HealthBarImage = GetComponent<Image>();
+    }
+
     // sets the health bar value
     // parameter val has range [0, 1]
     public static void SetHealthBarVal(float val)
     {
-        HealthBarImage.fillAmount = val;
-        if (HealthBarImage.fillAmount < 0.25f)
+        try
         {
-            SetHealthBarColor(Color.red);
+            HealthBarImage.fillAmount = val;
+            if (HealthBarImage.fillAmount < 0.25f)
+            {
+                SetHealthBarColor(Color.red);
+            }
+            else if (HealthBarImage.fillAmount < 0.5f)
+            {
+                SetHealthBarColor(Color.yellow);
+            }
+            else
+            {
+                SetHealthBarColor(Color.green);
+            }
         }
-        else if (HealthBarImage.fillAmount < 0.5f)
-        {
-            SetHealthBarColor(Color.yellow);
-        }
-        else
-        {
-            SetHealthBarColor(Color.green);
-        }
+        catch {}
     }
 
     public static float GetHealthBarVal()
@@ -37,15 +47,4 @@ public class HealthBarOperator : MonoBehaviour
         HealthBarImage.color = barColor;
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        HealthBarImage = GetComponent<Image>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

@@ -5458,8 +5458,8 @@ RectTransform:
   - {fileID: 580353008}
   - {fileID: 1678252412}
   - {fileID: 1759350367}
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_Father: {fileID: 514852027}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -5969,7 +5969,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1580251693
 GameObject:
