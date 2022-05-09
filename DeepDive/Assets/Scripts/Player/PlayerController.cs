@@ -67,4 +67,33 @@ public class PlayerController : MonoBehaviour
         transform.position += transform.up * activeHoverSpeed * Time.deltaTime;
         
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("HealthPickUp"))
+        {
+            if (HealthBarOperator.GetHealthBarVal() <= 0.75f)
+            {
+                HealthBarOperator.SetHealthBarVal(HealthBarOperator.GetHealthBarVal() + 0.25f);
+            }
+            else if (HealthBarOperator.GetHealthBarVal() <= 0.75f)
+            {
+                HealthBarOperator.SetHealthBarVal(1.0f);
+            }
+        }
+
+
+        if (other.gameObject.CompareTag("OxygenPickUp"))
+        {
+            if (OxygenBarOperator.GetOxygenBarVal() <= 0.75f)
+            {
+                OxygenBarOperator.SetOxygenBarVal(OxygenBarOperator.GetOxygenBarVal() + 0.25f);
+            }
+            else if (OxygenBarOperator.GetOxygenBarVal() <= 0.75f)
+            {
+                OxygenBarOperator.SetOxygenBarVal(1.0f);
+            }
+        }
+        other.gameObject.SetActive(false);
+    }
 }
