@@ -116,8 +116,8 @@ public class BasicFishMovement : MonoBehaviour
         int rotationTime = Random.Range(1, 3);
         int rotateWait = Random.Range(1, 3);
         int rotateDirection = Random.Range(1, 2);
-        int swimWait = Random.Range(1, 3);
-        float swimTime = Random.Range(1f, 3f);
+        float swimWait = Random.Range(0.1f, 1.5f);
+        float swimTime = Random.Range(3f, 10f);
 
         int swimUp = Random.Range(1, 5);
         int swimDown = Random.Range(1, 5);
