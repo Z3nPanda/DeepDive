@@ -35,6 +35,7 @@ public class SphereCast : MonoBehaviour
         if (Physics.SphereCast(start, 0.5f, rb.transform.forward, out hit, 20))
         {
             // update the score
+            Debug.Log("It works");
         }
     }
 }
