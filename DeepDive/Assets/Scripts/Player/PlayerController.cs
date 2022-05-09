@@ -34,6 +34,10 @@ public class PlayerController : MonoBehaviour
     {
         // player is constantly losing oxygen
         OxygenBarOperator.SetOxygenBarVal(OxygenBarOperator.GetOxygenBarVal() - 0.00005f);
+        if (OxygenBarOperator.GetOxygenBarVal() <= 0.0f)
+        {
+            HealthBarOperator.SetHealthBarVal(HealthBarOperator.GetHealthBarVal() - 0.00005f);
+        }
         
         // how to subrtract from player health
         // HealthBarOperator.SetHealthBarVal(HealthBarOperator.GetHealthBarVal() - 0.00005f);
