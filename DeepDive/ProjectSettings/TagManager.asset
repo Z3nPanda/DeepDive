@@ -3,7 +3,22 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - HealthPickUp
+  - OxygenPickUp
+  - Carp
+  - Catfish
+  - Clownfish
+  - Cod
+  - Discus
+  - Emperor
+  - Koifish
+  - Moorfish
+  - Octopus
+  - Peacock
+  - Perch
+  - RedEye
+  - Submarine
   layers:
   - Default
   - TransparentFX
@@ -15,7 +30,7 @@ TagManager:
   - 
   - 
   - Terrain
-  - 
+  - Fish
   - 
   - 
   - 

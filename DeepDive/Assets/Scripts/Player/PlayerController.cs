@@ -18,6 +18,9 @@ public class PlayerController : MonoBehaviour
     // Game ending reference
     public GameEnding gameEnding;
 
+    // Audio source reference
+    AudioSource audioSrc;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -31,6 +34,9 @@ public class PlayerController : MonoBehaviour
         // Instantiate the player's health and oxygen
         HealthBarOperator.SetHealthBarVal(1.0f);
         OxygenBarOperator.SetOxygenBarVal(1.0f);
+
+        // Get audio source component
+        audioSrc = GetComponent <AudioSource>();
     }
 
     // Update is called once per frame
@@ -85,6 +91,19 @@ public class PlayerController : MonoBehaviour
         activeFowardSpeed = Mathf.Lerp(activeFowardSpeed, Input.GetAxisRaw("Vertical") * forwardSpeed, forwardAcceleration * Time.deltaTime);
         activestrafeSpeed = Mathf.Lerp(activestrafeSpeed, Input.GetAxisRaw("Horizontal") * strafeSpeed, strafeAcceleration * Time.deltaTime);
         activeHoverSpeed = Mathf.Lerp(activeHoverSpeed, Input.GetAxisRaw("Hover") * hoverSpeed, hoverAcceleration * Time.deltaTime);
+
+        if (Input.GetAxisRaw("Vertical") == 1 || Input.GetAxisRaw("Vertical") == -1 || Input.GetAxisRaw("Horizontal") == 1 || Input.GetAxisRaw("Horizontal") == -1 ||  
+            Input.GetAxisRaw("Roll") == 1|| Input.GetAxisRaw("Roll") == -1)
+        {
+            if (!audioSrc.isPlaying)
+            {
+                audioSrc.Play();
+            }
+        }
+        else
+        {
+            audioSrc.Stop();
+        }
 
         // move the player
         transform.position += transform.forward * activeFowardSpeed * Time.deltaTime;
