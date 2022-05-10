@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 4647150841134860639}
   - component: {fileID: 8965812775703816228}
   - component: {fileID: 6761825043386311769}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Discus_v1_moveable
-  m_TagString: Untagged
+  m_TagString: Discus
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -90,9 +90,85 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7790644918265339584}
     m_Modifications:
+    - target: {fileID: 1009681252394946, guid: 9bcf87343c9dd1f49a2e5c1a0b71caa5, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1068907707329520, guid: 9bcf87343c9dd1f49a2e5c1a0b71caa5, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1176047621195498, guid: 9bcf87343c9dd1f49a2e5c1a0b71caa5, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1267785825310588, guid: 9bcf87343c9dd1f49a2e5c1a0b71caa5, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1301797408301014, guid: 9bcf87343c9dd1f49a2e5c1a0b71caa5, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1401286758691474, guid: 9bcf87343c9dd1f49a2e5c1a0b71caa5, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1484204966410144, guid: 9bcf87343c9dd1f49a2e5c1a0b71caa5, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1484240642909608, guid: 9bcf87343c9dd1f49a2e5c1a0b71caa5, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1568172665391082, guid: 9bcf87343c9dd1f49a2e5c1a0b71caa5, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1587681501340444, guid: 9bcf87343c9dd1f49a2e5c1a0b71caa5, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1690645760518726, guid: 9bcf87343c9dd1f49a2e5c1a0b71caa5, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1706997552949494, guid: 9bcf87343c9dd1f49a2e5c1a0b71caa5, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1741891142835804, guid: 9bcf87343c9dd1f49a2e5c1a0b71caa5, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774549493663472, guid: 9bcf87343c9dd1f49a2e5c1a0b71caa5, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1877489301822108, guid: 9bcf87343c9dd1f49a2e5c1a0b71caa5, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 1935673931770608, guid: 9bcf87343c9dd1f49a2e5c1a0b71caa5, type: 3}
       propertyPath: m_Name
       value: Discus_v1_prefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935673931770608, guid: 9bcf87343c9dd1f49a2e5c1a0b71caa5, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1952014544214714, guid: 9bcf87343c9dd1f49a2e5c1a0b71caa5, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1970004300695678, guid: 9bcf87343c9dd1f49a2e5c1a0b71caa5, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1991325148713542, guid: 9bcf87343c9dd1f49a2e5c1a0b71caa5, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4157532111668778, guid: 9bcf87343c9dd1f49a2e5c1a0b71caa5, type: 3}
       propertyPath: m_RootOrder

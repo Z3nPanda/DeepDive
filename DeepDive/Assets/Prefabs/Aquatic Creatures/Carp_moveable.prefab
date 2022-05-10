@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 5711968701772568149}
   - component: {fileID: 4623156030956356755}
   - component: {fileID: 1053195560511828848}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Carp_moveable
-  m_TagString: Untagged
+  m_TagString: Carp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -90,9 +90,89 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5524291991449892442}
     m_Modifications:
+    - target: {fileID: 1078251165551634, guid: 96e07ed0b6e146249a4eb204c8b42f6f, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 1107190881394354, guid: 96e07ed0b6e146249a4eb204c8b42f6f, type: 3}
       propertyPath: m_Name
       value: Carp_prefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 1107190881394354, guid: 96e07ed0b6e146249a4eb204c8b42f6f, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1107190881394354, guid: 96e07ed0b6e146249a4eb204c8b42f6f, type: 3}
+      propertyPath: m_TagString
+      value: Carp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1211061992569204, guid: 96e07ed0b6e146249a4eb204c8b42f6f, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1220217664859486, guid: 96e07ed0b6e146249a4eb204c8b42f6f, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1346684359437186, guid: 96e07ed0b6e146249a4eb204c8b42f6f, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1473586618743948, guid: 96e07ed0b6e146249a4eb204c8b42f6f, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1492249923307658, guid: 96e07ed0b6e146249a4eb204c8b42f6f, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1526138448141048, guid: 96e07ed0b6e146249a4eb204c8b42f6f, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1661459961239474, guid: 96e07ed0b6e146249a4eb204c8b42f6f, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1680219497145258, guid: 96e07ed0b6e146249a4eb204c8b42f6f, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1743983168763684, guid: 96e07ed0b6e146249a4eb204c8b42f6f, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1760677729272034, guid: 96e07ed0b6e146249a4eb204c8b42f6f, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774961441305960, guid: 96e07ed0b6e146249a4eb204c8b42f6f, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1872794620179564, guid: 96e07ed0b6e146249a4eb204c8b42f6f, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1906049701407904, guid: 96e07ed0b6e146249a4eb204c8b42f6f, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1911800499070202, guid: 96e07ed0b6e146249a4eb204c8b42f6f, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1938409261659210, guid: 96e07ed0b6e146249a4eb204c8b42f6f, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1950283971344172, guid: 96e07ed0b6e146249a4eb204c8b42f6f, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1996088302957938, guid: 96e07ed0b6e146249a4eb204c8b42f6f, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4143540963671840, guid: 96e07ed0b6e146249a4eb204c8b42f6f, type: 3}
       propertyPath: m_RootOrder

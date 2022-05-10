@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 7713787258047352048}
   - component: {fileID: 7713787258047352049}
   - component: {fileID: 7713787258047352054}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Peacock_Bass_moveable
-  m_TagString: Untagged
+  m_TagString: Peacock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -90,9 +90,85 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7713787258047352055}
     m_Modifications:
+    - target: {fileID: 1054378823654912, guid: 26be2583b4415674ba8757e8cbcf0a60, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1060718524551932, guid: 26be2583b4415674ba8757e8cbcf0a60, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1078350363294284, guid: 26be2583b4415674ba8757e8cbcf0a60, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1109273761263956, guid: 26be2583b4415674ba8757e8cbcf0a60, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1200725803170826, guid: 26be2583b4415674ba8757e8cbcf0a60, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1221856212797860, guid: 26be2583b4415674ba8757e8cbcf0a60, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1237962444043432, guid: 26be2583b4415674ba8757e8cbcf0a60, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1327102286626064, guid: 26be2583b4415674ba8757e8cbcf0a60, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1407672448855652, guid: 26be2583b4415674ba8757e8cbcf0a60, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423733002486232, guid: 26be2583b4415674ba8757e8cbcf0a60, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1475643036647416, guid: 26be2583b4415674ba8757e8cbcf0a60, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626602576908132, guid: 26be2583b4415674ba8757e8cbcf0a60, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1698988167722286, guid: 26be2583b4415674ba8757e8cbcf0a60, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1720806280607432, guid: 26be2583b4415674ba8757e8cbcf0a60, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1772856798392320, guid: 26be2583b4415674ba8757e8cbcf0a60, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1817112192945514, guid: 26be2583b4415674ba8757e8cbcf0a60, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1910831424359958, guid: 26be2583b4415674ba8757e8cbcf0a60, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1936489919690816, guid: 26be2583b4415674ba8757e8cbcf0a60, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 1957303125167972, guid: 26be2583b4415674ba8757e8cbcf0a60, type: 3}
       propertyPath: m_Name
       value: Peacock_bass_prefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 1957303125167972, guid: 26be2583b4415674ba8757e8cbcf0a60, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4263042154093944, guid: 26be2583b4415674ba8757e8cbcf0a60, type: 3}
       propertyPath: m_RootOrder

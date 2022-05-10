@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 1840680127361613296}
   - component: {fileID: 1007251628324780963}
   - component: {fileID: 3725691572744537797}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: KoiFish_moveable
-  m_TagString: Untagged
+  m_TagString: Koifish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -90,9 +90,85 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4891992063284118837}
     m_Modifications:
+    - target: {fileID: 1047863434043544, guid: 9b37844427900714bac5b352dbd931d0, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1055069149544762, guid: 9b37844427900714bac5b352dbd931d0, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1126304257372166, guid: 9b37844427900714bac5b352dbd931d0, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1180543077174198, guid: 9b37844427900714bac5b352dbd931d0, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227117297143420, guid: 9b37844427900714bac5b352dbd931d0, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1339967229570598, guid: 9b37844427900714bac5b352dbd931d0, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1391775156250854, guid: 9b37844427900714bac5b352dbd931d0, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1410904897066406, guid: 9b37844427900714bac5b352dbd931d0, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1620310474339288, guid: 9b37844427900714bac5b352dbd931d0, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1692719621820226, guid: 9b37844427900714bac5b352dbd931d0, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1707607975281118, guid: 9b37844427900714bac5b352dbd931d0, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 1748946944915498, guid: 9b37844427900714bac5b352dbd931d0, type: 3}
       propertyPath: m_Name
       value: Koi_prefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 1748946944915498, guid: 9b37844427900714bac5b352dbd931d0, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1779501827883952, guid: 9b37844427900714bac5b352dbd931d0, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1803030334579270, guid: 9b37844427900714bac5b352dbd931d0, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824687173787262, guid: 9b37844427900714bac5b352dbd931d0, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1825193982302074, guid: 9b37844427900714bac5b352dbd931d0, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1829219480904984, guid: 9b37844427900714bac5b352dbd931d0, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1873188538636856, guid: 9b37844427900714bac5b352dbd931d0, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1923300897194100, guid: 9b37844427900714bac5b352dbd931d0, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4485317997829598, guid: 9b37844427900714bac5b352dbd931d0, type: 3}
       propertyPath: m_RootOrder

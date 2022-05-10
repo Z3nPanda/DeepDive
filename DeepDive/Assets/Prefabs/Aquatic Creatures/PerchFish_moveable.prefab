@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 5161644051378278035}
   - component: {fileID: 687904889702866869}
   - component: {fileID: 8370434032579073255}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PerchFish_moveable
-  m_TagString: Untagged
+  m_TagString: Perch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -90,9 +90,85 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6914057311905415740}
     m_Modifications:
+    - target: {fileID: 1002388324249926, guid: 10e35f433bec91241ad1a1d84fac1228, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1049589051482570, guid: 10e35f433bec91241ad1a1d84fac1228, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1104426833194168, guid: 10e35f433bec91241ad1a1d84fac1228, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1151765073268960, guid: 10e35f433bec91241ad1a1d84fac1228, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 1275721718250480, guid: 10e35f433bec91241ad1a1d84fac1228, type: 3}
       propertyPath: m_Name
       value: Perch_fish_prefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 1275721718250480, guid: 10e35f433bec91241ad1a1d84fac1228, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1296213001095122, guid: 10e35f433bec91241ad1a1d84fac1228, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1395066400512554, guid: 10e35f433bec91241ad1a1d84fac1228, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1400945715198932, guid: 10e35f433bec91241ad1a1d84fac1228, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1417104120826824, guid: 10e35f433bec91241ad1a1d84fac1228, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1431458672437200, guid: 10e35f433bec91241ad1a1d84fac1228, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1625855930495112, guid: 10e35f433bec91241ad1a1d84fac1228, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1676715977824450, guid: 10e35f433bec91241ad1a1d84fac1228, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1702150074229244, guid: 10e35f433bec91241ad1a1d84fac1228, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1741477785463800, guid: 10e35f433bec91241ad1a1d84fac1228, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1837160048700110, guid: 10e35f433bec91241ad1a1d84fac1228, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1890644342922784, guid: 10e35f433bec91241ad1a1d84fac1228, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1981711294292102, guid: 10e35f433bec91241ad1a1d84fac1228, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1996087151560884, guid: 10e35f433bec91241ad1a1d84fac1228, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1998158512721908, guid: 10e35f433bec91241ad1a1d84fac1228, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4513232089543874, guid: 10e35f433bec91241ad1a1d84fac1228, type: 3}
       propertyPath: m_RootOrder

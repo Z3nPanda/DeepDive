@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 8550732184525304831}
   - component: {fileID: 8550732184525304828}
   - component: {fileID: 8550732184525304829}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: RedEyeFish_moveable
-  m_TagString: Untagged
+  m_TagString: RedEye
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -90,9 +90,85 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8550732184525304826}
     m_Modifications:
+    - target: {fileID: 1069805364771394, guid: 5469708956414f94797e5470f221a016, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140387630417598, guid: 5469708956414f94797e5470f221a016, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1156115416166210, guid: 5469708956414f94797e5470f221a016, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1173003328369436, guid: 5469708956414f94797e5470f221a016, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1331208243518794, guid: 5469708956414f94797e5470f221a016, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1335294513709318, guid: 5469708956414f94797e5470f221a016, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 1365381192422962, guid: 5469708956414f94797e5470f221a016, type: 3}
       propertyPath: m_Name
       value: Gold_redeye_fish_prefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 1365381192422962, guid: 5469708956414f94797e5470f221a016, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1408649568058710, guid: 5469708956414f94797e5470f221a016, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1425169222071462, guid: 5469708956414f94797e5470f221a016, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1450309326676242, guid: 5469708956414f94797e5470f221a016, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1474828321289484, guid: 5469708956414f94797e5470f221a016, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571819011700332, guid: 5469708956414f94797e5470f221a016, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1583355707653582, guid: 5469708956414f94797e5470f221a016, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1662249989871664, guid: 5469708956414f94797e5470f221a016, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1762512095355596, guid: 5469708956414f94797e5470f221a016, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1775121687882014, guid: 5469708956414f94797e5470f221a016, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1831852578935426, guid: 5469708956414f94797e5470f221a016, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1966285265292958, guid: 5469708956414f94797e5470f221a016, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1983693912786254, guid: 5469708956414f94797e5470f221a016, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4347947672895344, guid: 5469708956414f94797e5470f221a016, type: 3}
       propertyPath: m_RootOrder

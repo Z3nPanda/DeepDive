@@ -6,6 +6,29 @@ public class SphereCast : MonoBehaviour
 {
     private static Rigidbody rb;
     public CameraSwap rayCamActive;
+
+    // Score tracker
+    static int score = 0;
+
+    // Score system
+    static int rare = 500;
+    static int uncommon = 250;
+    static int common = 100;
+
+    // Booleans to track if the fish has been photographed
+    static bool carp = false;
+    static bool catfish = false;
+    static bool clownfish = false;
+    static bool cod = false;
+    static bool discus = false;
+    static bool emperor = false;
+    static bool koifish = false;
+    static bool moorfish = false;
+    static bool octopus = false;
+    static bool peacock = false;
+    static bool perch = false;
+    static bool redeye = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,14 +51,111 @@ public class SphereCast : MonoBehaviour
     {
         RaycastHit hit;
         Vector3 start = rb.transform.position;
-        // float objDist = 0f;
 
-        // cast a sphere 10m forward
-        // see if it hit something
-        if (Physics.SphereCast(start, 0.5f, rb.transform.forward, out hit, 20))
+        /* 
+        Cast a sphere everytime a photo is taken to detect new fish.
+        See if the fish has yet to be captured then improve player's score if they have found a newly discovered fish.
+        Scoring is as follows:
+        Rare = 500 pts
+        Uncommon = 250 pts
+        Common = 100 pts
+        */ 
+
+        // Carp - common
+        if (Physics.SphereCast(start, 0.5f, rb.transform.forward, out hit, 20) && hit.transform.tag == "Carp" && carp == false)
         {
-            // update the score
-            Debug.Log("It works");
+            carp = true;
+            score += common;
+            Debug.Log("I saw a carp!");
+            Debug.Log("Score = " + score);
+        }
+        // Catfish - uncommon
+        if (Physics.SphereCast(start, 0.5f, rb.transform.forward, out hit, 20) && hit.transform.tag == "Catfish" && catfish == false)
+        {
+            catfish = true;
+            score += uncommon;
+            Debug.Log("I saw a catfish!");
+            Debug.Log("Score = " + score);
+        }
+        // Clownfish - uncommon
+        if (Physics.SphereCast(start, 0.5f, rb.transform.forward, out hit, 20) && hit.transform.tag == "Clownfish" && clownfish == false)
+        {
+            clownfish = true;
+            score += uncommon;
+            Debug.Log("I saw a clownfish!");
+            Debug.Log("Score = " + score);
+        }
+        // Cod - common
+        if (Physics.SphereCast(start, 0.5f, rb.transform.forward, out hit, 20) && hit.transform.tag == "Cod" && cod == false)
+        {
+            cod = true;
+            score += common;
+            Debug.Log("I saw a cod!");
+            Debug.Log("Score = " + score);
+        }
+        // Discus - uncommon
+        if (Physics.SphereCast(start, 0.5f, rb.transform.forward, out hit, 20) && hit.transform.tag == "Discus" && discus == false)
+        {
+            discus = true;
+            score += uncommon;
+            Debug.Log("I saw a discus!");
+            Debug.Log("Score = " + score);
+        }
+        // Emperor - uncommon
+        if (Physics.SphereCast(start, 0.5f, rb.transform.forward, out hit, 20) && hit.transform.tag == "Emperor" && emperor == false)
+        {
+            emperor = true;
+            score += uncommon;
+            Debug.Log("I saw an emperor!");
+            Debug.Log("Score = " + score);
+        }
+        // Koifish - uncommon
+        if (Physics.SphereCast(start, 0.5f, rb.transform.forward, out hit, 20) && hit.transform.tag == "Koifish" && koifish == false)
+        {
+            koifish = true;
+            score += uncommon;
+            Debug.Log("I saw a koi fish!");
+            Debug.Log("Score = " + score);
+        }
+        // Moorfish - uncommon
+        if (Physics.SphereCast(start, 0.5f, rb.transform.forward, out hit, 20) && hit.transform.tag == "Moorfish" && moorfish == false)
+        {
+            moorfish = true;
+            score += uncommon;
+            Debug.Log("I saw a moorfish!");
+            Debug.Log("Score = " + score);
+        }
+        // Octopus - rare
+        if (Physics.SphereCast(start, 0.5f, rb.transform.forward, out hit, 20) && hit.transform.tag == "Octopus" && octopus == false)
+        {
+            octopus = true;
+            score += rare;
+            Debug.Log("I saw an octopus!");
+            Debug.Log("Score = " + score);
+        }
+        // Peacock - common
+        if (Physics.SphereCast(start, 0.5f, rb.transform.forward, out hit, 20) && hit.transform.tag == "Peacock" && peacock == false)
+        {
+            peacock = true;
+            score += common;
+            Debug.Log("I saw a peacock fish!");
+            Debug.Log("Score = " + score);
+        }
+        // Perch - common
+        if (Physics.SphereCast(start, 0.5f, rb.transform.forward, out hit, 20) && hit.transform.tag == "Perch" && perch == false)
+        {
+            perch = true;
+            score += common;
+            Debug.Log("I saw a perch!");
+            Debug.Log("Score = " + score);
+        }
+        // RedEye - common
+        if (Physics.SphereCast(start, 0.5f, rb.transform.forward, out hit, 20) && hit.transform.tag == "RedEye" && redeye == false)
+        {
+            redeye = true;
+            score += common;
+            Debug.Log("I saw a red eye!");
+            Debug.Log("Score = " + score);
         }
     }
 }

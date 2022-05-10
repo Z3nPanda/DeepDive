@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 679716010852669826}
   - component: {fileID: 679716010852669827}
   - component: {fileID: 679716010852669852}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: MoorishFish_moveable
-  m_TagString: Untagged
+  m_TagString: Moorfish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -90,9 +90,85 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 679716010852669853}
     m_Modifications:
+    - target: {fileID: 1024792232475970, guid: f8332fba29c64c041b261e4069ae7363, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1144854080678578, guid: f8332fba29c64c041b261e4069ae7363, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1201409749792852, guid: f8332fba29c64c041b261e4069ae7363, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1229647501089734, guid: f8332fba29c64c041b261e4069ae7363, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243330628338146, guid: f8332fba29c64c041b261e4069ae7363, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1279564644536368, guid: f8332fba29c64c041b261e4069ae7363, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1374883940341700, guid: f8332fba29c64c041b261e4069ae7363, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1418196063142026, guid: f8332fba29c64c041b261e4069ae7363, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1431342676592476, guid: f8332fba29c64c041b261e4069ae7363, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1433054064885520, guid: f8332fba29c64c041b261e4069ae7363, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1533186891790326, guid: f8332fba29c64c041b261e4069ae7363, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1583639912790560, guid: f8332fba29c64c041b261e4069ae7363, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 1614411733284342, guid: f8332fba29c64c041b261e4069ae7363, type: 3}
       propertyPath: m_Name
       value: Moorish_idol_prefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 1614411733284342, guid: f8332fba29c64c041b261e4069ae7363, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1655844674735186, guid: f8332fba29c64c041b261e4069ae7363, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1818198467395766, guid: f8332fba29c64c041b261e4069ae7363, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1878869969008788, guid: f8332fba29c64c041b261e4069ae7363, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1898455107493232, guid: f8332fba29c64c041b261e4069ae7363, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1920991494117394, guid: f8332fba29c64c041b261e4069ae7363, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928273185239704, guid: f8332fba29c64c041b261e4069ae7363, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4451508207631778, guid: f8332fba29c64c041b261e4069ae7363, type: 3}
       propertyPath: m_RootOrder

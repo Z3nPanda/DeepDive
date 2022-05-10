@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 8070027403252170827}
   - component: {fileID: 8070027403252170820}
   - component: {fileID: 8070027403252170821}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Emperor_angelfish_moveable
-  m_TagString: Untagged
+  m_TagString: Emperor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -90,9 +90,85 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8070027403252170822}
     m_Modifications:
+    - target: {fileID: 1024751550595930, guid: 5ef6cda3c62fbd94ea7530448a7a94ef, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1065625994089758, guid: 5ef6cda3c62fbd94ea7530448a7a94ef, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1121340279894064, guid: 5ef6cda3c62fbd94ea7530448a7a94ef, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1193088102155298, guid: 5ef6cda3c62fbd94ea7530448a7a94ef, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1253719026424678, guid: 5ef6cda3c62fbd94ea7530448a7a94ef, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1301651028027464, guid: 5ef6cda3c62fbd94ea7530448a7a94ef, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1307960246669594, guid: 5ef6cda3c62fbd94ea7530448a7a94ef, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1405081621550404, guid: 5ef6cda3c62fbd94ea7530448a7a94ef, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457783513657586, guid: 5ef6cda3c62fbd94ea7530448a7a94ef, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1467347562269900, guid: 5ef6cda3c62fbd94ea7530448a7a94ef, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1498656933683414, guid: 5ef6cda3c62fbd94ea7530448a7a94ef, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1633907335734328, guid: 5ef6cda3c62fbd94ea7530448a7a94ef, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1662941862697160, guid: 5ef6cda3c62fbd94ea7530448a7a94ef, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1764696339233044, guid: 5ef6cda3c62fbd94ea7530448a7a94ef, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844471141456560, guid: 5ef6cda3c62fbd94ea7530448a7a94ef, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1863420771975652, guid: 5ef6cda3c62fbd94ea7530448a7a94ef, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1877289848556652, guid: 5ef6cda3c62fbd94ea7530448a7a94ef, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 1911605819255016, guid: 5ef6cda3c62fbd94ea7530448a7a94ef, type: 3}
       propertyPath: m_Name
       value: Emperor_angelfish_prefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 1911605819255016, guid: 5ef6cda3c62fbd94ea7530448a7a94ef, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1995959577494690, guid: 5ef6cda3c62fbd94ea7530448a7a94ef, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4414522613082168, guid: 5ef6cda3c62fbd94ea7530448a7a94ef, type: 3}
       propertyPath: m_LocalRotation.w
