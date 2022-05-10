@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// script derived from https://www.youtube.com/watch?v=J6QR4KzNeJU
+// movement derived from https://www.youtube.com/watch?v=J6QR4KzNeJU
 
 public class PlayerController : MonoBehaviour
 {
