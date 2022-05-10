@@ -9,32 +9,46 @@ public class GameEnding : MonoBehaviour
     public GameObject player;
     public CanvasGroup exitBackgroundImageCanvasGroup;
 
-    bool m_IsPlayerAtExit;
+    bool player_at_submarine;
+    bool player_died;
     float m_Timer;
 
-    void OnTriggerEnter(Collider other)
+    // Public functions for if the player dies
+    public void PlayerDied()
     {
-        if (other.gameObject == player)
-        {
-            m_IsPlayerAtExit = true;
-        }
+        player_died = true;
     }
 
+    public void PlayerAtSubmarine()
+    {
+        player_at_submarine = true;
+    }
+
+    // If player has triggered an ending, end the game
     void Update()
     {
-        if (m_IsPlayerAtExit)
+        if(player_at_submarine)
         {
             EndLevel();
+            Debug.Log("player is at exit!");
         }
+        else if (player_died)
+        {
+            EndLevel();
+            Debug.Log("player is dead!");
+        }
+
     }
 
+    // End level function for ending the game
     void EndLevel()
     {
         m_Timer += Time.deltaTime;
         exitBackgroundImageCanvasGroup.alpha = m_Timer / fadeDuration;
-        if (m_Timer > fadeDuration + displayImageDuration)
+
+        if(m_Timer > fadeDuration + displayImageDuration)
         {
-            Application.Quit();
+            Debug.Log("Game over!");
         }
     }
 }

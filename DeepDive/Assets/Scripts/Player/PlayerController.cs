@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    // Movement variables
     public float forwardSpeed = 25f, strafeSpeed = 7.5f, hoverSpeed = 5f;
     private float activeFowardSpeed, activestrafeSpeed, activeHoverSpeed;
     private float forwardAcceleration = 2.5f, strafeAcceleration = 2f, hoverAcceleration  = 2f;
@@ -13,6 +14,9 @@ public class PlayerController : MonoBehaviour
     private Vector2 lookInput, screenCenter, mouseDist;
     private float rollInput;
     public float rollSpeed = 90f, rollAcceleration = 3.5f;
+
+    // Game ending reference
+    public GameEnding gameEnding;
 
     // Start is called before the first frame update
     void Start()
@@ -48,6 +52,12 @@ public class PlayerController : MonoBehaviour
             {
                 HealthBarOperator.SetHealthBarVal(HealthBarOperator.GetHealthBarVal() - 0.001f);
             }
+        }
+
+        // If player's health reaches 0, end the game
+        if (HealthBarOperator.GetHealthBarVal() <= 0.0f)
+        {
+            gameEnding.PlayerDied();
         }
         
         // how to subrtract from player health
@@ -85,6 +95,8 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        // If player picks up health, increase health by 25 hit points or restore them to full if over 75 hit points
+        // Note: Full HP = 100 hit points
         if (other.gameObject.CompareTag("HealthPickUp"))
         {
             if (HealthBarOperator.GetHealthBarVal() <= 0.75f)
@@ -95,9 +107,11 @@ public class PlayerController : MonoBehaviour
             {
                 HealthBarOperator.SetHealthBarVal(1.0f);
             }
+            other.gameObject.SetActive(false);
         }
 
-
+        // If player picks up oxygen tank, increase oxygen by 25 points or restore to full if over 75 oxygen points
+        // Note: Full OP = 100 points
         if (other.gameObject.CompareTag("OxygenPickUp"))
         {
             if (OxygenBarOperator.GetOxygenBarVal() <= 0.75f)
@@ -108,7 +122,13 @@ public class PlayerController : MonoBehaviour
             {
                 OxygenBarOperator.SetOxygenBarVal(1.0f);
             }
+            other.gameObject.SetActive(false);
         }
-        other.gameObject.SetActive(false);
+
+        // If the player reaches the submarine, end the game and display score
+        if (other.gameObject.CompareTag("Submarine"))
+        {
+            gameEnding.PlayerAtSubmarine();
+        }
     }
 }
