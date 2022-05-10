@@ -129,15 +129,15 @@ public class PlayerController : MonoBehaviour
             other.gameObject.SetActive(false);
         }
 
-        // If player picks up oxygen tank, increase oxygen by 25 points or restore to full if over 75 oxygen points
+        // If player picks up oxygen tank, increase oxygen by 50 points or restore to full if over 75 oxygen points
         // Note: Full OP = 100 points
         if (other.gameObject.CompareTag("OxygenPickUp"))
         {
             if (OxygenBarOperator.GetOxygenBarVal() <= 0.75f)
             {
-                OxygenBarOperator.SetOxygenBarVal(OxygenBarOperator.GetOxygenBarVal() + 0.25f);
+                OxygenBarOperator.SetOxygenBarVal(OxygenBarOperator.GetOxygenBarVal() + 0.50f);
             }
-            else if (OxygenBarOperator.GetOxygenBarVal() <= 0.75f)
+            else if (OxygenBarOperator.GetOxygenBarVal() <= 0.50f)
             {
                 OxygenBarOperator.SetOxygenBarVal(1.0f);
             }
