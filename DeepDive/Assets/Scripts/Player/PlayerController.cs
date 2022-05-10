@@ -38,6 +38,17 @@ public class PlayerController : MonoBehaviour
         {
             HealthBarOperator.SetHealthBarVal(HealthBarOperator.GetHealthBarVal() - 0.00005f);
         }
+        // If player is too high up, to simulate the "bends" the player will begin to lose health to simulate the damage taken, this also restricts playable area
+        // Gentleish reminder to stay below Y = 300
+        if (transform.position.y >= 300f)
+        {
+            HealthBarOperator.SetHealthBarVal(HealthBarOperator.GetHealthBarVal() - 0.0001f);
+            // Harsh penalty if player tries to reach Y = 400
+            if (transform.position.y >= 400f)
+            {
+                HealthBarOperator.SetHealthBarVal(HealthBarOperator.GetHealthBarVal() - 0.001f);
+            }
+        }
         
         // how to subrtract from player health
         // HealthBarOperator.SetHealthBarVal(HealthBarOperator.GetHealthBarVal() - 0.00005f);
