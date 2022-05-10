@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class SphereCast : MonoBehaviour
 {
@@ -8,6 +10,7 @@ public class SphereCast : MonoBehaviour
     public CameraSwap rayCamActive;
 
     // Score tracker
+    public TMP_Text scoreText;
     static int score = 0;
 
     // Score system
@@ -33,6 +36,7 @@ public class SphereCast : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        scoreText.text = score.ToString();
     }
 
     // Update is called once per frame
@@ -45,6 +49,8 @@ public class SphereCast : MonoBehaviour
                 CastSphere();
             }
         }
+
+        scoreText.text = score.ToString();
     }
 
     public static void CastSphere()
