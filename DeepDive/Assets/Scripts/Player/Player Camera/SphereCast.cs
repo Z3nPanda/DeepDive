@@ -13,6 +13,10 @@ public class SphereCast : MonoBehaviour
     public TMP_Text scoreText;
     static int score = 0;
 
+    // Fish announcement
+    public TMP_Text announcementText;
+    static string announcement = "";
+
     // Score system
     static int rare = 500;
     static int uncommon = 250;
@@ -37,6 +41,7 @@ public class SphereCast : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         scoreText.text = score.ToString();
+        announcementText.text = "";
     }
 
     // Update is called once per frame
@@ -51,6 +56,7 @@ public class SphereCast : MonoBehaviour
         }
 
         scoreText.text = score.ToString();
+        announcementText.text = announcement;
     }
 
     public static void CastSphere()
@@ -72,6 +78,7 @@ public class SphereCast : MonoBehaviour
         {
             carp = true;
             score += common;
+            announcement = "I saw a carp!";
             Debug.Log("I saw a carp!");
             Debug.Log("Score = " + score);
         }
@@ -80,6 +87,7 @@ public class SphereCast : MonoBehaviour
         {
             catfish = true;
             score += uncommon;
+            announcement = "I saw a catfish!";
             Debug.Log("I saw a catfish!");
             Debug.Log("Score = " + score);
         }
@@ -88,6 +96,7 @@ public class SphereCast : MonoBehaviour
         {
             clownfish = true;
             score += uncommon;
+            announcement = "I saw a clownfish!";
             Debug.Log("I saw a clownfish!");
             Debug.Log("Score = " + score);
         }
@@ -96,6 +105,7 @@ public class SphereCast : MonoBehaviour
         {
             cod = true;
             score += common;
+            announcement = "I saw a cod!";
             Debug.Log("I saw a cod!");
             Debug.Log("Score = " + score);
         }
@@ -104,6 +114,7 @@ public class SphereCast : MonoBehaviour
         {
             discus = true;
             score += uncommon;
+            announcement = "I saw a discus!";
             Debug.Log("I saw a discus!");
             Debug.Log("Score = " + score);
         }
@@ -112,6 +123,7 @@ public class SphereCast : MonoBehaviour
         {
             emperor = true;
             score += uncommon;
+            announcement = "I saw an emperor fish!";
             Debug.Log("I saw an emperor!");
             Debug.Log("Score = " + score);
         }
@@ -120,6 +132,7 @@ public class SphereCast : MonoBehaviour
         {
             koifish = true;
             score += uncommon;
+            announcement = "I saw a koi fish!";
             Debug.Log("I saw a koi fish!");
             Debug.Log("Score = " + score);
         }
@@ -128,6 +141,7 @@ public class SphereCast : MonoBehaviour
         {
             moorfish = true;
             score += uncommon;
+            announcement = "I saw a moorfish!";
             Debug.Log("I saw a moorfish!");
             Debug.Log("Score = " + score);
         }
@@ -136,6 +150,7 @@ public class SphereCast : MonoBehaviour
         {
             octopus = true;
             score += rare;
+            announcement = "I saw an octopus!";
             Debug.Log("I saw an octopus!");
             Debug.Log("Score = " + score);
         }
@@ -144,6 +159,7 @@ public class SphereCast : MonoBehaviour
         {
             peacock = true;
             score += common;
+            announcement = "I saw a peacock fish!";
             Debug.Log("I saw a peacock fish!");
             Debug.Log("Score = " + score);
         }
@@ -152,6 +168,7 @@ public class SphereCast : MonoBehaviour
         {
             perch = true;
             score += common;
+            announcement = "I saw a perch!";
             Debug.Log("I saw a perch!");
             Debug.Log("Score = " + score);
         }
@@ -160,6 +177,7 @@ public class SphereCast : MonoBehaviour
         {
             redeye = true;
             score += common;
+            announcement = "I saw a red eye fish!";
             Debug.Log("I saw a red eye!");
             Debug.Log("Score = " + score);
         }
