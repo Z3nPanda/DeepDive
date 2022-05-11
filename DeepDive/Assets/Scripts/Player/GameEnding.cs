@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameEnding : MonoBehaviour
 {
@@ -9,8 +10,10 @@ public class GameEnding : MonoBehaviour
     public GameObject player;
     public CanvasGroup exitBackgroundImageCanvasGroup;
 
+    // Game status
     bool player_at_submarine;
     bool player_died;
+    bool restart;
     float m_Timer;
 
     // Public functions for if the player dies
@@ -30,12 +33,20 @@ public class GameEnding : MonoBehaviour
         if(player_at_submarine)
         {
             EndLevel();
-            Debug.Log("player is at exit!");
+            if (Input.GetKeyDown("r"))
+            {
+                restart = true;
+            }
+            // Debug.Log("player is at exit!");
         }
         else if (player_died)
         {
             EndLevel();
-            Debug.Log("player is dead!");
+            if (Input.GetKeyDown("r"))
+            {
+                restart = true;
+            }
+            // Debug.Log("player is dead!");
         }
 
     }
@@ -48,7 +59,11 @@ public class GameEnding : MonoBehaviour
 
         if(m_Timer > fadeDuration + displayImageDuration)
         {
-            Debug.Log("Game over!");
+            if (restart)
+            {
+                SceneManager.LoadScene(0);
+            }
+            // Debug.Log("Game over!");
         }
     }
 }
