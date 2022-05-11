@@ -11,7 +11,7 @@ public class SphereCast : MonoBehaviour
 
     // Score tracker
     public TMP_Text scoreText;
-    static int score = 0;
+    public static int score = 0;
 
     // Fish announcement
     public TMP_Text announcementText;
@@ -57,6 +57,11 @@ public class SphereCast : MonoBehaviour
 
         scoreText.text = score.ToString();
         announcementText.text = announcement;
+    }
+
+    public int GetScore()
+    {
+        return score;
     }
 
     public static void CastSphere()

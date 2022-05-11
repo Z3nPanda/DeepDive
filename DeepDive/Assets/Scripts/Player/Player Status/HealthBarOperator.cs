@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class HealthBarOperator : MonoBehaviour
 {
     private static Image HealthBarImage;
+    public SphereCast sphereCast;
 
     // Start is called before the first frame update
     void Start()

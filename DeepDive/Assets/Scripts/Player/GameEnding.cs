@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class GameEnding : MonoBehaviour
 {
@@ -9,12 +10,20 @@ public class GameEnding : MonoBehaviour
     public float displayImageDuration = 1f;
     public GameObject player;
     public CanvasGroup exitBackgroundImageCanvasGroup;
+    public CanvasGroup gameOver;
+    public CanvasGroup finalScore;
 
     // Game status
     bool player_at_submarine;
     bool player_died;
     bool restart;
     float m_Timer;
+
+    // End game UI information/tools
+    public SphereCast sphereCast;
+    public TMP_Text finalScoreText;
+    int finalScoreInt;
+    bool scoreExists;
 
     // Public functions for if the player dies
     public void PlayerDied()
@@ -32,6 +41,11 @@ public class GameEnding : MonoBehaviour
     {
         if(player_at_submarine)
         {
+            if (!scoreExists)
+            {
+                finalScoreInt = sphereCast.GetScore();
+                finalScoreText.text = "Final Score: " + finalScoreInt.ToString();
+            }
             EndLevel();
             if (Input.GetKeyDown("r"))
             {
@@ -41,6 +55,11 @@ public class GameEnding : MonoBehaviour
         }
         else if (player_died)
         {
+            if (!scoreExists)
+            {
+                finalScoreInt = sphereCast.GetScore();
+                finalScoreText.text = "Final Score: " + finalScoreInt.ToString();
+            }
             EndLevel();
             if (Input.GetKeyDown("r"))
             {
@@ -56,6 +75,9 @@ public class GameEnding : MonoBehaviour
     {
         m_Timer += Time.deltaTime;
         exitBackgroundImageCanvasGroup.alpha = m_Timer / fadeDuration;
+        gameOver.alpha = m_Timer / fadeDuration;
+        finalScore.alpha = m_Timer / fadeDuration;
+        
 
         if(m_Timer > fadeDuration + displayImageDuration)
         {
