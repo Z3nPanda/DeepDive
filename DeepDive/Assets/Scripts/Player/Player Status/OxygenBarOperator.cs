@@ -6,12 +6,13 @@ using UnityEngine.UI;
 public class OxygenBarOperator : MonoBehaviour
 {
     private static Image OxygenBarImage;
+    private static int count = 0;
 
     // sets the oxygen bar value
     // parameter val has range [0, 1]
     public static void SetOxygenBarVal(float val)
     {
-        try {
+        if (count != 0) {
             OxygenBarImage.fillAmount = val;
             if (OxygenBarImage.fillAmount < 0.25f)
             {
@@ -26,7 +27,7 @@ public class OxygenBarOperator : MonoBehaviour
                 SetOxygenBarColor(Color.white);
             }
         }
-        catch {}
+        else {count = 1;}
     }
 
     public static float GetOxygenBarVal()

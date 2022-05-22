@@ -11435,7 +11435,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 521fb372ec0db444ebd1d289ed01672e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sphereCast: {fileID: 0}
+  sphereCast: {fileID: 948539144}
+  healthbar: {fileID: 580353009}
 --- !u!4 &581284165 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8070027403252170822, guid: c3a8e0a26cbbdea448066947c39236b0, type: 3}

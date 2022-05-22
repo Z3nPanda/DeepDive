@@ -7,19 +7,21 @@ public class HealthBarOperator : MonoBehaviour
 {
     private static Image HealthBarImage;
     public SphereCast sphereCast;
+    public Image healthbar;
+    private static int count = 0;
 
     // Start is called before the first frame update
     void Start()
     {
-        HealthBarImage = GetComponent<Image>();
+        HealthBarImage = healthbar;
+
     }
 
     // sets the health bar value
     // parameter val has range [0, 1]
     public static void SetHealthBarVal(float val)
     {
-        try
-        {
+        if (count != 0) {
             HealthBarImage.fillAmount = val;
             if (HealthBarImage.fillAmount < 0.25f)
             {
@@ -34,7 +36,10 @@ public class HealthBarOperator : MonoBehaviour
                 SetHealthBarColor(Color.green);
             }
         }
-        catch {}
+        else {
+            count = 1;
+        }
+        
     }
 
     public static float GetHealthBarVal()
