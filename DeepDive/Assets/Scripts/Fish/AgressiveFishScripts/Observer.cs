@@ -13,14 +13,15 @@ public class Observer : MonoBehaviour
         if (playerInRange)
         {
             Vector3 direction = player.position - transform.position + Vector3.forward;
-            Ray ray = new Ray (transform.position, direction);
-            RaycastHit raycastHit;
-            Debug.DrawRay(ray.origin, ray.direction * 1000.0f, Color.red);
+            Vector3 p1 = (transform.position + new Vector3 (0, 0, 3.5f)) + Vector3.forward * .5f;
+            Vector3 p2 = p1 + Vector3.forward;
+            RaycastHit hit;
 
-            if(Physics.Raycast(ray, out raycastHit, 1000))
+            if(Physics.CapsuleCast(p1, p2, 1.0f, direction, out hit, 10))
             {
-                if(raycastHit.collider.transform.tag == "Player")
+                if(hit.collider.transform.tag == "Player")
                 {
+                    Debug.Log("Hit player at distance = " + hit.distance);
                     if (control.getFollow() == false)
                     {
                         control.setFollowTrue();
