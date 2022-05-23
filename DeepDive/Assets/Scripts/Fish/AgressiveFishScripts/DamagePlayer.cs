@@ -8,6 +8,10 @@ public class DamagePlayer : MonoBehaviour
     bool playerInRange;
     public float damage = .001f;
 
+    // Health and Oxygen game objects
+    public HealthBarOperator HealthBarOperator;
+    public OxygenBarOperator OxygenBarOperator;
+
     // Update is called once per frame
     void Update()
     {

@@ -19420,6 +19420,8 @@ MonoBehaviour:
   finalScore: {fileID: 465171820}
   sphereCast: {fileID: 948539144}
   finalScoreText: {fileID: 465171821}
+  HealthBarOperator: {fileID: 580353011}
+  OxygenBarOperator: {fileID: 1759350370}
 --- !u!82 &948539152
 AudioSource:
   m_ObjectHideFlags: 0
@@ -26452,6 +26454,14 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 948539154}
+    - target: {fileID: 6494574054699578089, guid: 12b0e11dc0cdf7c40bbef9a89bcc1bd7, type: 3}
+      propertyPath: HealthBarOperator
+      value: 
+      objectReference: {fileID: 580353011}
+    - target: {fileID: 6494574054699578089, guid: 12b0e11dc0cdf7c40bbef9a89bcc1bd7, type: 3}
+      propertyPath: OxygenBarOperator
+      value: 
+      objectReference: {fileID: 1759350370}
     - target: {fileID: 8904157769634140177, guid: 12b0e11dc0cdf7c40bbef9a89bcc1bd7, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -26715,6 +26725,14 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 948539154}
+    - target: {fileID: 6494574054699578089, guid: 12b0e11dc0cdf7c40bbef9a89bcc1bd7, type: 3}
+      propertyPath: HealthBarOperator
+      value: 
+      objectReference: {fileID: 580353011}
+    - target: {fileID: 6494574054699578089, guid: 12b0e11dc0cdf7c40bbef9a89bcc1bd7, type: 3}
+      propertyPath: OxygenBarOperator
+      value: 
+      objectReference: {fileID: 1759350370}
     - target: {fileID: 8904157769634140177, guid: 12b0e11dc0cdf7c40bbef9a89bcc1bd7, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -47438,6 +47456,14 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 948539154}
+    - target: {fileID: 6494574054699578089, guid: 12b0e11dc0cdf7c40bbef9a89bcc1bd7, type: 3}
+      propertyPath: HealthBarOperator
+      value: 
+      objectReference: {fileID: 580353011}
+    - target: {fileID: 6494574054699578089, guid: 12b0e11dc0cdf7c40bbef9a89bcc1bd7, type: 3}
+      propertyPath: OxygenBarOperator
+      value: 
+      objectReference: {fileID: 1759350370}
     - target: {fileID: 8904157769634140177, guid: 12b0e11dc0cdf7c40bbef9a89bcc1bd7, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -47837,6 +47863,14 @@ PrefabInstance:
       propertyPath: rollAcceleration
       value: 2.5
       objectReference: {fileID: 0}
+    - target: {fileID: 6084903867199841449, guid: 888a3fd7c2544124c909082d78780a36, type: 3}
+      propertyPath: HealthBarOperator
+      value: 
+      objectReference: {fileID: 580353011}
+    - target: {fileID: 6084903867199841449, guid: 888a3fd7c2544124c909082d78780a36, type: 3}
+      propertyPath: OxygenBarOperator
+      value: 
+      objectReference: {fileID: 1759350370}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 888a3fd7c2544124c909082d78780a36, type: 3}
 --- !u!1001 &7713787258557432573

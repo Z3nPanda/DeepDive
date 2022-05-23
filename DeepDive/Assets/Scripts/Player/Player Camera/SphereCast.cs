@@ -64,6 +64,32 @@ public class SphereCast : MonoBehaviour
         return score;
     }
 
+    public void SetScore(int new_score)
+    {
+        score = new_score;
+    }
+
+    public void SetText(string new_txt)
+    {
+        announcement = new_txt;
+    }
+
+    public void ResetCapture()
+    {
+        carp = false;
+        catfish = false;
+        clownfish = false;
+        cod = false;
+        discus = false;
+        emperor = false;
+        koifish = false;
+        moorfish = false;
+        octopus = false;
+        peacock = false;
+        perch = false;
+        redeye = false;
+    }
+
     public static void CastSphere()
     {
         RaycastHit hit;

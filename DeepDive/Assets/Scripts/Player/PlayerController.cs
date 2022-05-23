@@ -15,6 +15,10 @@ public class PlayerController : MonoBehaviour
     private float rollInput;
     public float rollSpeed = 90f, rollAcceleration = 3.5f;
 
+    // Health and Oxygen game objects
+    public HealthBarOperator HealthBarOperator;
+    public OxygenBarOperator OxygenBarOperator;
+
     // Game ending reference
     public GameEnding gameEnding;
 

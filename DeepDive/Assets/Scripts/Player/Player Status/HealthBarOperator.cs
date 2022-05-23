@@ -5,10 +5,10 @@ using UnityEngine.UI;
 
 public class HealthBarOperator : MonoBehaviour
 {
-    private static Image HealthBarImage;
+    private Image HealthBarImage;
     public SphereCast sphereCast;
     public Image healthbar;
-    private static int count = 0;
+    public int w_count = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -19,9 +19,10 @@ public class HealthBarOperator : MonoBehaviour
 
     // sets the health bar value
     // parameter val has range [0, 1]
-    public static void SetHealthBarVal(float val)
+    public void SetHealthBarVal(float val)
     {
-        if (count != 0) {
+        if (w_count != 0)
+        {
             HealthBarImage.fillAmount = val;
             if (HealthBarImage.fillAmount < 0.25f)
             {
@@ -36,19 +37,25 @@ public class HealthBarOperator : MonoBehaviour
                 SetHealthBarColor(Color.green);
             }
         }
-        else {
-            count = 1;
+        else
+        {
+            w_count = 1;
         }
-        
+
     }
 
-    public static float GetHealthBarVal()
+    public void SetCount(int new_count)
+    {
+        w_count = new_count;
+    }
+
+    public float GetHealthBarVal()
     {
         return HealthBarImage.fillAmount;
     }
     
     // set the color
-    public static void SetHealthBarColor(Color barColor)
+    public void SetHealthBarColor(Color barColor)
     {
         HealthBarImage.color = barColor;
     }

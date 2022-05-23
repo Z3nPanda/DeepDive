@@ -25,6 +25,10 @@ public class GameEnding : MonoBehaviour
     int finalScoreInt;
     bool scoreExists;
 
+    // Health and Oxygen game objects
+    public HealthBarOperator HealthBarOperator;
+    public OxygenBarOperator OxygenBarOperator;
+
     // Public functions for if the player dies
     public void PlayerDied()
     {
@@ -49,6 +53,11 @@ public class GameEnding : MonoBehaviour
             EndLevel();
             if (Input.GetKeyDown("r"))
             {
+                sphereCast.SetScore(0);
+                sphereCast.SetText("");
+                sphereCast.ResetCapture();
+                HealthBarOperator.SetCount(0);
+                OxygenBarOperator.SetCount(0);
                 restart = true;
             }
             // Debug.Log("player is at exit!");
@@ -63,6 +72,11 @@ public class GameEnding : MonoBehaviour
             EndLevel();
             if (Input.GetKeyDown("r"))
             {
+                sphereCast.SetScore(0);
+                sphereCast.SetText("");
+                sphereCast.ResetCapture();
+                HealthBarOperator.SetCount(0);
+                OxygenBarOperator.SetCount(0);
                 restart = true;
             }
             // Debug.Log("player is dead!");
