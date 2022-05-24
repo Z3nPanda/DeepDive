@@ -1,0 +1,21 @@
+Infos
+------------------------------------------------------
+
+
+
+Just drag and drop the plants in the Prefabs folder directly to your scene. 
+
+In the materials folder, you will find some materials exemple. 
+The material use the Plant Shader and the 2 textures needed are already plugged in. 
+Juste duplicate the material and create as many as you want.
+
+The Scene Folder contains some exemple you can start with. 
+
+
+
+
+-------------------------------------------------------
+Nauthilus Games
+
+contact : nauthilusgames@gmail.com
+-------------------------------------------------------

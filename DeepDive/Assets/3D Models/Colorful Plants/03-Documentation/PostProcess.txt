@@ -1,0 +1,38 @@
+You can use the post processing stack available on the asset store for free.
+
+These are the parameters I used in the Post-Processing Profile :
+
+
+-Antialiasing
+	Fast Approximate anti=aliasing
+	Extreme quality
+
+-Ambient Occlusion
+	Intensity : 0.3
+	Radius : 0.3
+	Sample count : high
+	Downsampling : Check
+	Force Forward compatibility : Uncheck
+	High Precision : Check
+	Ambient Only : Uncheck
+
+-Bloom
+	Intensity : 1.5
+	Threshold : 1.05
+	Soft Knee : 0.645
+	Radius : 4.2
+
+-Color Grading
+	Tonemapper : none
+	Post Exposure : 0
+	Temperature : 5
+	Tint : 0
+	Hue Shift : 0
+	Saturation : 1
+	Contrast : 1.075
+
+-Vignette
+	Mode classic
+	Intensity : 0.415
+	Smoothness : 0.93
+	Roundness : 0.728

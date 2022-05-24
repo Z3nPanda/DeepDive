@@ -1,0 +1,30 @@
+PlantShader parameters
+----------------------------------------------------------------------------
+
+-Plant color 01
+-Plant color 02
+
+You can choose two color that will blend together 
+
+-Flower color 01 : choose the color of the flower (outside)
+-Flower color 02 : choose the color of the flower (inside)
+
+Choose the color of the flower
+
+-Emissive color
+-Emissive power
+
+You can choose to use emissive and pick a color. 
+0 = no emissive
+2 = emissive max
+
+-Outline : you can activate it or disable it. It will add an outline at the border edges of the leaves.
+
+-Outline color : choose the color of the outilne, if you activate it.
+
+-Texture mask 01 : input texture for the PlantPack_mask_01 texture
+-Texture mask 02 : input texture for the PlantPack_mask_02 texture
+
+----------------------------------------------------------------------------
+Nauthilus Games
+----------------------------------------------------------------------------
