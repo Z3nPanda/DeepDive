@@ -17,7 +17,7 @@ public class Observer : MonoBehaviour
             Vector3 p2 = p1 + Vector3.forward;
             RaycastHit hit;
 
-            if(Physics.CapsuleCast(p1, p2, 1.0f, direction, out hit, 10))
+            if(Physics.CapsuleCast(p1, p2, 5.0f, direction, out hit))
             {
                 if(hit.collider.transform.tag == "Player")
                 {
