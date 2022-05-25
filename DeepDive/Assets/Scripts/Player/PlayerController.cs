@@ -25,6 +25,9 @@ public class PlayerController : MonoBehaviour
     // Audio source reference
     AudioSource audioSrc;
 
+    // Flashlight reference
+    public GameObject flashlight;
+    public Flashlight flash;
     // Start is called before the first frame update
     void Start()
     {
@@ -152,6 +155,13 @@ public class PlayerController : MonoBehaviour
         if (other.gameObject.CompareTag("Submarine"))
         {
             gameEnding.PlayerAtSubmarine();
+        }
+
+       // If flashlight is picked up, enable it 
+        if (flashlight.gameObject.CompareTag("flashlight"))
+        {
+            flashlight.gameObject.SetActive(false);
+            flash.foundFlashLight();
         }
     }
 }
