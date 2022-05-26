@@ -35,6 +35,7 @@ public class SphereCast : MonoBehaviour
     static bool peacock = false;
     static bool perch = false;
     static bool redeye = false;
+    static bool shark = false;
 
     // Start is called before the first frame update
     void Start()
@@ -88,6 +89,7 @@ public class SphereCast : MonoBehaviour
         peacock = false;
         perch = false;
         redeye = false;
+        shark = false;
     }
 
     public static void CastSphere()
@@ -210,6 +212,15 @@ public class SphereCast : MonoBehaviour
             score += common;
             announcement = "I saw a red eye fish!";
             Debug.Log("I saw a red eye!");
+            Debug.Log("Score = " + score);
+        }
+        // Shark - rare
+        if (Physics.SphereCast(start, 0.5f, rb.transform.forward, out hit, 20) && hit.transform.tag == "Shark" && shark == false)
+        {
+            shark = true;
+            score += rare;
+            announcement = "I saw a shark!";
+            Debug.Log("I saw a shark!");
             Debug.Log("Score = " + score);
         }
     }

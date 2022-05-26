@@ -50,10 +50,10 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         // player is constantly losing oxygen
-        OxygenBarOperator.SetOxygenBarVal(OxygenBarOperator.GetOxygenBarVal() - 0.00005f);
+        OxygenBarOperator.SetOxygenBarVal(OxygenBarOperator.GetOxygenBarVal() - 0.00015f);
         if (OxygenBarOperator.GetOxygenBarVal() <= 0.0f)
         {
-            HealthBarOperator.SetHealthBarVal(HealthBarOperator.GetHealthBarVal() - 0.00005f);
+            HealthBarOperator.SetHealthBarVal(HealthBarOperator.GetHealthBarVal() - 0.00015f);
         }
         // If player is too high up, to simulate the "bends" the player will begin to lose health to simulate the damage taken, this also restricts playable area
         // Gentleish reminder to stay below Y = 300

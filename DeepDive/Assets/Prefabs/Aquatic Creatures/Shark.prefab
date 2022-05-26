@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 5294445084745496285}
   m_Layer: 0
   m_Name: Shark
-  m_TagString: Untagged
+  m_TagString: Shark
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -108,7 +108,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7d5b343e6d86104a90ccad851a0f545, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 0.3
+  movementSpeed: 0.5
   rotationSpeed: 45
   Terrain:
     serializedVersion: 2
@@ -175,6 +175,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   damage: 0.0005
+  HealthBarOperator: {fileID: 0}
+  OxygenBarOperator: {fileID: 0}
 --- !u!1 &7194193006146371960
 GameObject:
   m_ObjectHideFlags: 0
