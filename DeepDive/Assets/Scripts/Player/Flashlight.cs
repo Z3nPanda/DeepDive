@@ -9,6 +9,11 @@ public class Flashlight : MonoBehaviour
     public bool foundLight = false;
     bool flashOn = false;
 
+    void Start()
+    {
+        flashlight.SetActive(false);
+    }
+
     void Update()
     {
         if (foundLight)

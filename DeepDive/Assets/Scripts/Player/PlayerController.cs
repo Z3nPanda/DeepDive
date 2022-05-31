@@ -7,6 +7,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     // Movement variables
+    Rigidbody rigid;
     public float forwardSpeed = 25f, strafeSpeed = 7.5f, hoverSpeed = 5f;
     private float activeFowardSpeed, activestrafeSpeed, activeHoverSpeed;
     private float forwardAcceleration = 2.5f, strafeAcceleration = 2f, hoverAcceleration  = 2f;
@@ -31,6 +32,9 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // get rigidbody of player
+        rigid = GetComponent<Rigidbody>();
+
         // adjusting screen size to player's computer screen sematics
         screenCenter.x = Screen.width * 0.5f;
         screenCenter.y = Screen.height * 0.5f;
@@ -121,6 +125,11 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        if (other.gameObject.CompareTag("Terrain"))
+        {
+            rigid.velocity = new Vector3(0,0,0);
+        }
+
         // If player picks up health, increase health by 25 hit points or restore them to full if over 75 hit points
         // Note: Full HP = 100 hit points
         if (other.gameObject.CompareTag("HealthPickUp"))

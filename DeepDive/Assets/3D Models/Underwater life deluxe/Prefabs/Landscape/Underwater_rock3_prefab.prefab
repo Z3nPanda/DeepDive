@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 64332822752819262}
   m_Layer: 0
   m_Name: Underwater_rock3_prefab
-  m_TagString: Untagged
+  m_TagString: Terrain
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

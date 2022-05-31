@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 64460021407241126}
   m_Layer: 0
   m_Name: Landscape_rock8_prefab
-  m_TagString: Untagged
+  m_TagString: Terrain
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
