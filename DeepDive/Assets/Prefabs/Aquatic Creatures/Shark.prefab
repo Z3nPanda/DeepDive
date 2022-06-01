@@ -95,7 +95,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  speed: 4
+  speed: 10
 --- !u!114 &5294445084745496285
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -113,7 +113,7 @@ MonoBehaviour:
   Terrain:
     serializedVersion: 2
     m_Bits: 512
-  yUpperLimit: 100
+  yUpperLimit: 50
   yLowerLimit: 10
 --- !u!1 &6494574054699578091
 GameObject:
