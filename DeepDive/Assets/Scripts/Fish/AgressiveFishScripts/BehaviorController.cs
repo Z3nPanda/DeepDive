@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class BehaviorController : MonoBehaviour
 {
     public GameObject shark;
+    public TMP_Text danger;
     bool fixTransform = false;
     bool follow;
     public float maxTime = 100f;
@@ -16,6 +19,7 @@ public class BehaviorController : MonoBehaviour
         followTime = maxTime;
         GetComponent<AgressiveFish>().enabled = false;
         GetComponent<BasicFishMovement>().enabled = true;
+        danger.enabled = false;
     }
 
     void FixedUpdate()
@@ -30,6 +34,7 @@ public class BehaviorController : MonoBehaviour
             {
                 GetComponent<BasicFishMovement>().enabled = false;
                 GetComponent<AgressiveFish>().enabled = true;
+                danger.enabled = true;
             }
             followTime = followTime - .25f;
             Debug.Log(followTime);
@@ -41,6 +46,7 @@ public class BehaviorController : MonoBehaviour
             {
                 GetComponent<AgressiveFish>().enabled = false;
                 GetComponent<BasicFishMovement>().enabled = true;
+                danger.enabled = false;
                 resetFollowTime(maxTime);
                 Debug.Log("Player Escaped");
             }
