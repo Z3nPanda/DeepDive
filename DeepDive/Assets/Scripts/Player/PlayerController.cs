@@ -29,6 +29,10 @@ public class PlayerController : MonoBehaviour
     // Flashlight reference
     public GameObject flashlight;
     public Flashlight flash;
+
+    // Score Reference
+    public SphereCast sphereCast;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -171,6 +175,12 @@ public class PlayerController : MonoBehaviour
         {
             flashlight.gameObject.SetActive(false);
             flash.foundFlashLight();
+        }
+
+        if (other.gameObject.CompareTag("Treasure"))
+        {
+            sphereCast.IncreaseScore(1000);
+            other.gameObject.SetActive(false);
         }
     }
 }

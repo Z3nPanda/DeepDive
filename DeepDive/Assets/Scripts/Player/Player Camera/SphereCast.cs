@@ -70,6 +70,11 @@ public class SphereCast : MonoBehaviour
         score = new_score;
     }
 
+    public void IncreaseScore(int new_score)
+    {
+        score += new_score;
+    }
+
     public void SetText(string new_txt)
     {
         announcement = new_txt;
